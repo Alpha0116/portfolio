@@ -24,6 +24,12 @@ header.header{
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width: 663px) {
+    .navbar {
+        flex-wrap: wrap;
+        flex: 0 0 20%; /* Deux éléments par ligne */
+    }
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -36,6 +42,12 @@ div.logo{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+}
+@media (max-width: 663px) {
+    .nav-links li {
+        flex-wrap: wrap;
+        flex: 2% 0 10%; /* Deux éléments par ligne */
+    }
 }
 ul.nav-links{
     color: #fff;
